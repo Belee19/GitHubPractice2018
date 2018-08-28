@@ -15,6 +15,7 @@ public class BaseClass {
 
 	@BeforeClass
 	public static void beforeClass() {
+		//Location for chrome
 		System.setProperty("webdriver.chrome.driver", "G:\\Aumation Software\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
 		baseUrl = "https://anyaut.com/orange/index.php";
@@ -26,6 +27,7 @@ public class BaseClass {
 
 	@Test
 	public void test() {
+		// Enter ryour user name
 		signInPageFactory.enterUserName("example.com");
 		signInPageFactory.enterPassword("XYZ123");
 		signInPageFactory.clickEyeIcon();

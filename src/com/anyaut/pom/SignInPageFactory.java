@@ -9,9 +9,9 @@ public class SignInPageFactory {
 	WebDriver driver;
 
 	@FindBy(id = "username")
-	WebElement userName;
+	WebElement userName;  
 
-	@FindBy(id = "password")
+	@FindBy(id = "password")  
 	WebElement password;
 
 	@FindBy(xpath = "//span[@class='soh']")
